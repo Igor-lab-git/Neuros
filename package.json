@@ -1,0 +1,22 @@
+{
+  "name": "neuros",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor-lab-git/Neuros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igor-lab-git/Neuros/issues"
+  },
+  "homepage": "https://github.com/Igor-lab-git/Neuros#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}
