@@ -9,6 +9,7 @@
   border-radius: var(--border-radius-small);
   color: var(--color-light);
   background-color: var(--color-blue);
+  border: var(--border-button-light-blue);
 
   @include hover {
     color: var(--color-blue);

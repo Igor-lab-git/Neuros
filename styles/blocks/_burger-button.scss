@@ -10,15 +10,37 @@
   padding: rem(8) rem(4);
   color: var(--color-dark);
 
+  @include hover {
+    color: var(--color-blue);
+  }
+
+  &.is-active {
+    .burger-button__line {
+      &:first-child {
+        rotate: 45deg;
+        transform-origin: 0;
+        translate: 0.4em 0.1em;
+      }
+      &:nth-child(2) {
+        width: 0;
+      }
+      &:last-child {
+        rotate: -45deg;
+        transform-origin: 0;
+        translate: 0.4em 0.1em;
+      }
+    }
+  }
+
   &__line {
     width: 100%;
-    height: rem(2);
-    border-radius: rem(10);
+    height: rem(3);
+    border-radius: 1rem;
     background-color: currentColor;
     transition-duration: var(--transition-duration);
 
     &:nth-child(2) {
-      width: 60%;
+      width: 50%;
     }
   }
 }

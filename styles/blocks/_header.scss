@@ -9,6 +9,10 @@
       padding-block: rem(16);
       padding-inline: rem(32);
     }
+
+    @include mobile {
+      padding-block: rem(10);
+    }
   }
 
   &__promo-wrapper {
@@ -41,11 +45,6 @@
     align-items: center;
     justify-content: space-between;
     column-gap: rem(10);
-
-    @include tablet {
-      justify-content: normal;
-      margin-left: auto;
-    }
   }
 
   &__body-wrapper-logo-menu {
@@ -69,5 +68,9 @@
   &__body-wrapper-action-buttons {
     display: flex;
     column-gap: rem(8);
+
+    @include tablet {
+      margin-left: auto;
+    }
   }
 }

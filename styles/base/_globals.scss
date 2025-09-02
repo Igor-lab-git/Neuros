@@ -20,11 +20,21 @@ body {
 
   min-height: 100vh;
   min-width: rem(320);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family-base);
   font-size: rem(16);
   line-height: 1.6;
   color: var(--color-dark);
   background-color: var(--color-light);
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  display: none !important;
 }
 
 h1,
@@ -102,15 +112,16 @@ a {
 
 a {
   @include fluid-text(16, 14);
-  @include hover {
-    color: var(--color-blue);
-    text-decoration: underline;
-  }
 
   font-family: var(--font-family-title);
   font-weight: 500;
   line-height: 1.22;
   color: var(--color-text);
+
+  @include hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+  }
 }
 
 img {

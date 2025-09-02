@@ -1,0 +1,52 @@
+@use "../helpers/" as *;
+
+.footer {
+  &__inner {
+    padding-block: rem(80) rem(40);
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(60);
+    border-bottom: var(--border);
+  }
+
+  &__wrapper-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: rem(20);
+  }
+
+  &__wrapper-logo-line {
+    flex: 1;
+    height: 1px;
+    min-width: rem(20);
+    background-color: var(--color-gray-n200);
+  }
+
+  &__menu {
+    padding-block: rem(60) fluid(112, 60);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    column-gap: rem(32);
+  }
+
+  &__menu-column {
+    display: grid;
+    row-gap: rem(16);
+  }
+
+  &__menu-main-link {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-gray-n900);
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(8);
+  }
+}
