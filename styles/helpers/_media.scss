@@ -9,13 +9,13 @@ $mobile: 810.98;
 $mobile-s: 420.98;
 
 @mixin labtop-above {
-  @media (width > rem($desktop)) {
+  @media (width > rem($labtop)) {
     @content;
   }
 }
 
 @mixin labtop {
-  @media (width <= rem($desktop)) {
+  @media (width <= rem($labtop)) {
     @content;
   }
 }

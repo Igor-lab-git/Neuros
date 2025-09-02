@@ -7,18 +7,47 @@
   --color-border-blue: #b6d1fb;
   --color-text: #4b5162;
   --color-text-alt: #626981;
-  --color-border-gray: #b6bccd;
+  --color-gray-n600: #79829f;
+  --color-border-button-alt: #b6bccd;
   --color-text-dark-theme: #BEC2D3;
   --color-dark-theme: #171c2f;
+  --border-line: #d2d5e2;
+
+
+	--primary-pr400: #88b2f9;
+	
+	--neutral-n100: #f5f7fa;
+	--neutral-n800: #4b5162;
+	--neutral-n400: #b6bccd;
+	--primary-pr500: #6099f7;
+	--neutral-n500: #9ea5bd;
+	
+	--neutral-n200: #eceef4;
+	--neutral-n900: #343844;
+	--neutral-n700: #626981;
+	--primary-pr800: #224c93;
+	--primary-pr700: #2d66c4;
+	--primary-pr300: #b6d1fb;
+	--primary-pr200: #e2ecfe;
 
   --color-dark-rgb: 75, 80, 98;
   --color-dark-80: rgba(var(--color-dark-rgb), 0.8);
   --color-dark-60: rgba(var(--color-dark-rgb), 0.6);
   --color-dark-40: rgba(var(--color-dark-rgb), 0.4);
 
+  --border: 1px solid var(--border-line);
+  --border-button-light-blue: 1px solid var(--color-border-blue);
+  --border-button-alt: 1px solid var(--color-border-button-alt);
+
+  --border-radius-small: 12px;
+  --border-radius-medium: 20px;
+  --border-radius-large: 32px;
+
+  --button-height: #{rem(48)};
+
   --font-family-base: "Inter", "sans-serif";
   --font-family-title: "DMSans", "sans-serif";
-  --font-family-accent: "dinpro", "sans-serif";
+  --font-family-third: "dinpro", "sans-serif";
 
   --container-width: #{rem(1200)};
   --container-padding-x: #{rem(20)};

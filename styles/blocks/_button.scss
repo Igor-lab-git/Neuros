@@ -1,0 +1,29 @@
+@use "../helpers/" as *;
+
+.button {
+  height: var(--button-height);
+  padding: rem(14) rem(28);
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: rem(16);
+  border-radius: var(--border-radius-small);
+  color: var(--color-light);
+  background-color: var(--color-blue);
+
+  @include hover {
+    color: var(--color-blue);
+    background-color: transparent;
+    border: var(--border-button-light-blue);
+  }
+
+  &--light-blue {
+    border: var(--border-button-light-blue);
+    color: var(--color-blue);
+    background-color: transparent;
+
+    @include hover {
+      color: var(--color-light);
+      background-color: var(--color-blue);
+    }
+  }
+}

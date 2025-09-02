@@ -1,0 +1,24 @@
+@use "../helpers/" as *;
+
+.burger-button {
+  @include square(rem(48));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(8) rem(4);
+  color: var(--color-dark);
+
+  &__line {
+    width: 100%;
+    height: rem(2);
+    border-radius: rem(10);
+    background-color: currentColor;
+    transition-duration: var(--transition-duration);
+
+    &:nth-child(2) {
+      width: 60%;
+    }
+  }
+}

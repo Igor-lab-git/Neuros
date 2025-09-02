@@ -1,0 +1,73 @@
+@use "../helpers/" as *;
+
+.header {
+  &__inner {
+    padding-block: rem(20);
+    border-bottom: var(--border);
+
+    @include tablet {
+      padding-block: rem(16);
+      padding-inline: rem(32);
+    }
+  }
+
+  &__promo-wrapper {
+    @include flex-center;
+
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__promo-list {
+    @include flex-center;
+
+    column-gap: rem(20);
+  }
+
+  &__promo-link {
+    @include fluid-text(14, 14);
+
+    display: flex;
+    align-items: center;
+    column-gap: rem(8);
+    color: var(--color-gray-n600);
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(10);
+
+    @include tablet {
+      justify-content: normal;
+      margin-left: auto;
+    }
+  }
+
+  &__body-wrapper-logo-menu {
+    display: flex;
+    align-items: center;
+    column-gap: rem(40);
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: rem(32);
+  }
+
+  &__menu-link {
+    display: flex;
+    align-items: center;
+    column-gap: rem(8);
+  }
+
+  &__body-wrapper-action-buttons {
+    display: flex;
+    column-gap: rem(8);
+  }
+}
