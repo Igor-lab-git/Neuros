@@ -1,0 +1,43 @@
+@use "../helpers/" as *;
+
+.section {
+  padding-block: 128px 112px;
+
+  &--hero-padding {
+    padding-block: 112px 0;
+  }
+
+  &__header {
+    margin-bottom: rem(60);
+  }
+
+  &__header-body {
+    max-width: rem(860);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    row-gap: rem(16);
+
+    &--hero-gap {
+      row-gap: rem(20);
+
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+    }
+  }
+
+  &__header-description {
+    font-weight: 400;
+    max-width: 88%;
+    color: var(--color-text);
+  }
+
+  &__header-actions-buttons {
+    @include flex-center;
+
+    column-gap: rem(12);
+  }
+}

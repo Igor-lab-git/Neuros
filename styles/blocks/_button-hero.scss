@@ -1,0 +1,59 @@
+@use "../helpers/" as *;
+
+.button-hero {
+
+    padding: rem(13) rem(24);
+    border-radius: var(--border-radius-hige);
+    background-color: var(--color-light);
+    box-shadow: 0 0 0 12px rgba(195, 209, 255, 0.35);
+
+  &__wrapper {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(31);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include fluid-text(20, 20);
+
+    font-weight: 600;
+    line-height: 1.58;
+    color: var(--color-dark);
+  }
+
+  &__body-info {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(8)
+  }
+
+  &__time {
+    @include fluid-text(16, 16);
+     
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  &__middle-point {
+    @include square(rem(4));
+
+    display: inline-block;
+   border-radius: 50%;
+
+    background-color: rgba(50, 68, 139, 0.2);
+  }
+
+  &__play {
+    @include fluid-text(16, 16);
+     
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-blue);
+  }
+}

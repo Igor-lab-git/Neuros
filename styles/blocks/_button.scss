@@ -27,4 +27,23 @@
       background-color: var(--color-blue);
     }
   }
+
+  &--light-dark {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-gray-n400);
+
+    @include hover {
+      color: var(--color-text);
+    }
+  }
+
+  &--light-dark-icon-arrow {
+    width: rem(14);
+    height: rem(11);
+
+    & path {
+      fill: var(--color-gray-n900);
+    }
+  }
 }
