@@ -479,10 +479,6 @@ main {
   flex-grow: 1;
 }
 
-header {
-  display: none !important;
-}
-
 h1,
 .h1,
 h2,
@@ -749,23 +745,27 @@ button {
 }
 
 .footer__inner {
-  padding-block: 5rem 2.5rem;
+  margin-block: 5rem 2.5rem;
+}
+@media (width <= 26.31125rem) {
+  .footer__inner {
+    margin-block: 2.5rem 2.5rem;
+  }
 }
 .footer__body {
   display: flex;
   flex-direction: column;
-  row-gap: 3.75rem;
   border-bottom: var(--border);
 }
 .footer__wrapper-logo {
   display: flex;
   align-items: center;
-  width: 100%;
   column-gap: 1.25rem;
 }
 .footer__wrapper-logo-line {
   flex: 1;
   height: 1px;
+  width: 100%;
   min-width: 1.25rem;
   background-color: var(--color-gray-n200);
 }
@@ -775,6 +775,12 @@ button {
   grid-template-columns: repeat(4, 1fr);
   align-items: start;
   column-gap: 2rem;
+}
+@media (width <= 50.68625rem) {
+  .footer__menu {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
 }
 .footer__menu-column {
   display: grid;
@@ -789,6 +795,52 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+}
+.footer__menu-link--soc1al {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+.footer__extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+  padding-block: 1.25rem;
+}
+.footer__extra-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+@media (width <= 26.31125rem) {
+  .footer__extra-menu-list {
+    flex-wrap: wrap;
+    column-gap: 0.9375rem;
+  }
+}
+.footer__extra-copyright {
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text-alt);
+}
+@media (width <= 50.68625rem) {
+  .footer__extra-copyright {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+.footer__extra-menu-link {
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  line-height: 1.26;
+}
+@media (width <= 50.68625rem) {
+  .footer__extra-menu-link {
+    display: inline-flex;
+    white-space: nowrap;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

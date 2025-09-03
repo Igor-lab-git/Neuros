@@ -2,25 +2,28 @@
 
 .footer {
   &__inner {
-    padding-block: rem(80) rem(40);
+    margin-block: rem(80) rem(40);
+
+    @include mobile-s {
+      margin-block: rem(40) rem(40);
+    }
   }
   &__body {
     display: flex;
     flex-direction: column;
-    row-gap: rem(60);
     border-bottom: var(--border);
   }
 
   &__wrapper-logo {
     display: flex;
     align-items: center;
-    width: 100%;
     column-gap: rem(20);
   }
 
   &__wrapper-logo-line {
     flex: 1;
     height: 1px;
+    width: 100%;
     min-width: rem(20);
     background-color: var(--color-gray-n200);
   }
@@ -31,6 +34,11 @@
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
     column-gap: rem(32);
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(32);
+    }
   }
 
   &__menu-column {
@@ -48,5 +56,55 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(8);
+  }
+
+  &__menu-link {
+    &--soc1al {
+      display: inline-flex;
+      align-items: center;
+      column-gap: rem(4);
+    }
+  }
+
+  &__extra {
+    @include flex-between;
+
+    column-gap: rem(24);
+    padding-block: rem(20);
+  }
+
+  &__extra-menu-list {
+    @include flex-between;
+
+    column-gap: rem(24);
+
+    @include mobile-s {
+      flex-wrap: wrap;
+      column-gap: rem(15);
+    }
+  }
+
+  &__extra-copyright {
+    @include fluid-text(14, 14);
+
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-text-alt);
+
+    @include mobile {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__extra-menu-link {
+    @include fluid-text(14, 14);
+
+    line-height: 1.26;
+
+    @include mobile {
+      display: inline-flex;
+      white-space: nowrap;
+    }
   }
 }

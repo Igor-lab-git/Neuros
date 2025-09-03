@@ -42,6 +42,17 @@
   align-items: center;
 }
 
+@mixin flex-between($isInline: false) {
+  @if $isInline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+
+  justify-content: space-between;
+  align-items: center;
+}
+
 @mixin abs-center {
   position: absolute;
   top: 50%;
