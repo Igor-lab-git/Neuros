@@ -4,5 +4,55 @@
   &__cards-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      row-gap: rem(12);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include tablet {
+    &__cards-item:last-child {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+  }
+
+  &__main {
+    margin-top: rem(40);
+    height: fluid(480, 260);
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius-medium-large);
+    background: url("../../images/images/strategies/bg-image.webp") no-repeat
+      center/cover;
+  }
+
+  &__main-slogan {
+    margin-top: rem(140);
+    padding: rem(12) rem(18);
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(8);
+    height: rem(56);
+    font-weight: 500;
+    font-size: rem(20);
+    border-radius: var(--border-radius-hige);
+    background-color: var(--color-light);
+    box-shadow: 0 0 0 12px rgba(195, 209, 255, 0.35);
+
+    &::before {
+      @include square(rem(20));
+      content: "";
+      margin-right: 3px;
+      background: url("../../images/icons/hero/icon-tag-label.svg") no-repeat
+        center left;
+    }
   }
 }

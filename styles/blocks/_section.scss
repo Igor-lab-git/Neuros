@@ -21,6 +21,7 @@
     row-gap: rem(16);
 
     &--hero-gap {
+      max-width: rem(520);
       row-gap: rem(20);
 
       &:not(:last-child) {
@@ -45,7 +46,19 @@
       align-items: normal;
       row-gap: rem(12);
     }
+
+    &--strategies-row {
+      flex-direction: row;
+
+      & button {
+        width: rem(147);
+        margin: 0;
+        
+      }
+    }
   }
+  
+  
 
   &__header-actions-button-trial,
   &__header-actions-button-video {
@@ -54,5 +67,9 @@
       max-width: rem(380);
       margin: auto;
     }
+  }
+
+  &--strategies-padding {
+    margin-bottom: rem(60);
   }
 }

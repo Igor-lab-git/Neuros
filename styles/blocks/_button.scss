@@ -46,4 +46,13 @@
       fill: var(--color-gray-n900);
     }
   }
+
+  &--light {
+    background-color: var(--color-light);
+    color: var(--light-dark);
+
+    @include hover {
+      color: var(--light-dark);
+    }
+  }
 }
