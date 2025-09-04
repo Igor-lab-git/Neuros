@@ -4,11 +4,12 @@
   &__main {
     @include flex-center;
 
+    margin-bottom: fluid(80, 60);
     max-width: 100%;
     max-height: 100%;
     height: fluid(480, 267);
     border-radius: var(--border-radius-medium-large);
-    background: url("../../images/images/hero/hero-bg.webp") center/cover
-      no-repeat;
+    background: url("../../images/images/hero/hero-bg.webp") no-repeat center/cover
+      ;
   }
 }

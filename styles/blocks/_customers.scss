@@ -1,8 +1,31 @@
 @use "../helpers/" as *;
 
 .customers {
+  padding-block: fluid(40, 20) rem(60);
+
   &__description {
+    text-align: center;
     font-weight: 400;
     color: var(--color-text);
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__list {
+    padding-block: rem(20);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: rem(40);
+    overflow: auto;
+  }
+
+  &__image {
+    flex-shrink: 0;
+  }
+
+  &__item {
+    width: rem(187);
   }
 }

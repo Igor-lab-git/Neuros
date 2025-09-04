@@ -3,9 +3,14 @@
 .button-hero {
 
     padding: rem(13) rem(24);
+    height: rem(84);
     border-radius: var(--border-radius-hige);
     background-color: var(--color-light);
     box-shadow: 0 0 0 12px rgba(195, 209, 255, 0.35);
+
+    @include mobile {
+      @include square(84px);
+    }
 
   &__wrapper {
     display: inline-flex;
@@ -24,6 +29,11 @@
     font-weight: 600;
     line-height: 1.58;
     color: var(--color-dark);
+
+    @include hover {
+      color: var(--color-blue);
+      text-decoration: underline;
+    }
   }
 
   &__body-info {

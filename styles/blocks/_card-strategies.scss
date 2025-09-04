@@ -1,0 +1,24 @@
+@use "../helpers/" as *;
+
+.card-strategies {
+  padding: rem(16) rem(20);
+  height: rem(144);
+  border: 1px solid black;
+
+  &__title {
+    // color: red;
+  }
+
+  &__description {
+    height: 78px;
+    
+        
+
+    & p {
+        white-space: nowrap;      /* Запрещаем перенос строк */
+        overflow-y: hidden;         /* Скрываем всё, что выходит за границы */
+        text-overflow: ellipsis;  /* Добавляем троеточие */
+        width: 100%; 
+    }
+  }
+}

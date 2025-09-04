@@ -1,0 +1,8 @@
+@use "../helpers/" as *;
+
+.strategies {
+  &__cards-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

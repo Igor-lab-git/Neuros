@@ -1,6 +1,8 @@
 @use "../helpers/" as *;
 
 .tag {
+  @include fluid-text(16, 11);
+
   display: inline-flex;
   align-items: center;
   align-self: center;
