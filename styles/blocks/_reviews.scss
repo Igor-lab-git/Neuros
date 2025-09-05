@@ -1,0 +1,10 @@
+@use "../helpers/" as*;
+
+.reviews {
+
+    &__list {
+        display: flex;
+        column-gap: rem(24);
+        overflow-x: auto;
+    }
+}

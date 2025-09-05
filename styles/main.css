@@ -848,6 +848,12 @@ button {
 .section--hero-padding {
   padding-block: clamp(3.75rem, 2.4363636364rem + 6.1818181818vw, 8rem) 0;
 }
+.section--hero-padding-strategies {
+  padding-block: clamp(3.75rem, 2.4363636364rem + 6.1818181818vw, 8rem) clamp(0.375rem, -1.6727272727rem + 9.6363636364vw, 7rem);
+}
+.section--hero-padding-reviews {
+  padding-block: clamp(3.75rem, 2.4363636364rem + 6.1818181818vw, 8rem) clamp(0rem, -2.1636363636rem + 10.1818181818vw, 7rem);
+}
 .section__header {
   margin-bottom: clamp(2rem, 1.4590909091rem + 2.5454545455vw, 3.75rem);
 }
@@ -866,6 +872,9 @@ button {
 }
 .section__header-body--hero-gap:not(:last-child) {
   margin-bottom: 2.5rem;
+}
+.section__header-body--reviews-gap {
+  max-width: 50rem;
 }
 .section__header-description {
   font-weight: 400;
@@ -901,6 +910,9 @@ button {
 }
 .section--strategies-padding {
   margin-bottom: 3.75rem;
+}
+.section--reviews-padding {
+  margin-bottom: 3rem;
 }
 
 .tag {
@@ -1051,6 +1063,52 @@ button {
   text-overflow: ellipsis;
   color: var(--color-text);
   opacity: 0.8;
+}
+
+.reviews__list {
+  display: flex;
+  column-gap: 1.5rem;
+  overflow-x: auto;
+}
+
+.reviews-card {
+  width: clamp(20.625rem, 19.2727272727rem + 6.3636363636vw, 25rem);
+  height: 100%;
+  min-height: 32.75rem;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color-gray-n400);
+  border-radius: var(--border-radius-medium);
+}
+.reviews-card__header {
+  max-width: 9.375rem;
+  height: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-card__image {
+  margin-bottom: 1rem;
+}
+.reviews-card__name {
+  font-weight: 600;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  line-height: 1.6;
+  color: var(--color-gray-n900);
+}
+.reviews-card__post {
+  line-height: 1.6;
+  color: var(--color-text);
+}
+.reviews-card__body {
+  margin-top: 45%;
+  font-weight: 500;
+  font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+  line-height: 1.58;
+  text-align: center;
 }
 
 .footer__inner {

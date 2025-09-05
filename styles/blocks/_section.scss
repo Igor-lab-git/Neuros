@@ -7,6 +7,14 @@
     padding-block: fluid(128, 60) 0;
   }
 
+  &--hero-padding-strategies {
+    padding-block: fluid(128, 60) fluid(112, 6);
+  }
+
+  &--hero-padding-reviews {
+    padding-block: fluid(128, 60) fluid(112, 0);
+  }
+
   &__header {
     margin-bottom: fluid(60, 32);
   }
@@ -27,6 +35,10 @@
       &:not(:last-child) {
         margin-bottom: rem(40);
       }
+    }
+
+    &--reviews-gap {
+      max-width: rem(800);
     }
   }
 
@@ -57,8 +69,6 @@
       }
     }
   }
-  
-  
 
   &__header-actions-button-trial,
   &__header-actions-button-video {
@@ -71,5 +81,9 @@
 
   &--strategies-padding {
     margin-bottom: rem(60);
+  }
+
+  &--reviews-padding {
+    margin-bottom: rem(48);
   }
 }

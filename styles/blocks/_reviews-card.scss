@@ -1,0 +1,46 @@
+@use "../helpers/" as *;
+
+.reviews-card {
+  width: fluid(400, 330);
+  height: 100%;
+  min-height: rem(524);
+  padding: rem(32) rem(40);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color-gray-n400);
+  border-radius: var(--border-radius-medium);
+
+  &__header {
+    max-width: rem(150);
+    height: rem(100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    margin-bottom: rem(16);
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: fluid(16, 16);
+    line-height: 1.6;
+    color: var(--color-gray-n900);
+  }
+
+  &__post {
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  &__body {
+    margin-top: 45%;
+    font-weight: 500;
+    font-size: fluid(20, 20);
+    line-height: 1.58;
+    text-align: center;
+  }
+}
