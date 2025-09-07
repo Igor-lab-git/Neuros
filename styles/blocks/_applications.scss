@@ -1,0 +1,59 @@
+@use "../helpers/" as *;
+
+.applications {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(36);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(32);
+
+    @include labtop {
+      grid-template-columns: repeat(2, 1fr);
+
+      & li:last-child {
+        grid-column: 1 / span 2;
+      }
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+
+      & li:last-child {
+        grid-column: 1 / span 1;
+      }
+    }
+  }
+
+  &__button {
+    padding: rem(12) rem(20);
+    align-self: center;
+    font-weight: 700;
+    font-size: rem(14);
+    line-height: 1.26;
+    max-height: none;
+    border: var(--border-button-alt);
+    border-radius: var(--border-radius-small);
+    color: var(--color-gray-n900);
+
+    @include hover {
+      color: var(--color-blue);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    height: 164px;
+    pointer-events: none;
+    background: linear-gradient(transparent, var(--color-light) 80%);
+    backdrop-filter: blur(1px);
+    transition: opacity 0.3s ease;
+  }
+}
