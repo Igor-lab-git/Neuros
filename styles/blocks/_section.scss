@@ -19,6 +19,16 @@
     padding-block: fluid(128, 128) fluid(112, 112);
   }
 
+  &--padding-faq-flex {
+    padding-block: fluid(128, 60) fluid(112, 60);
+    display: flex;
+    justify-content: space-between;
+
+    @include labtop {
+      flex-wrap: wrap;
+    }
+  }
+
   &__header {
     margin-bottom: fluid(60, 32);
 
@@ -48,6 +58,13 @@
 
     &--applications-width {
       max-width: rem(800);
+    }
+
+    &--faq-width-flex {
+      text-align: start;
+      align-items: flex-start;
+      max-width: rem(400);
+      margin-inline: 0;
     }
   }
 

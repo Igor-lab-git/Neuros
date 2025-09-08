@@ -2,8 +2,7 @@
 
 .header {
   &__inner {
-    padding-block: rem(20);
-    border-bottom: var(--border);
+    padding-top: rem(20);
 
     @include tablet {
       padding-block: rem(16);
@@ -41,10 +40,12 @@
   }
 
   &__body {
+    padding-bottom: rem(20);
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: rem(10);
+    border-bottom: var(--border);
   }
 
   &__body-wrapper-logo-menu {
